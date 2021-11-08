@@ -7,6 +7,50 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+    font-weight: 700;
+}
+
+.col-sm-4 {
+    padding: 15px;
+}
+
+.sous-titre {
+    display: flex;
+    padding: 7px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.rs::before {
+    color: #000;
+}
+
+.descr {
+    color: #FFF;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -81,7 +125,7 @@ a:hover {
 }
 
 .bloc-bg-texture::before {
-    content: "";
+    
     background-size: 2px 2px;
     position: absolute;
     top: 0;
@@ -90,23 +134,17 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #000;
 }
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
-
 .d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
@@ -195,7 +233,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: #000;
 }
 
 .d-bloc .panel button:hover,
@@ -479,6 +517,10 @@ button {
     font-size: 30px!important;
 }
 
+.icon-blue {
+    color: #6CC8F3;
+}
+
 .icon-lg {
     font-size: 60px!important;
 }
@@ -572,6 +614,7 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
+    height: 500px;
     max-height: 90vh;
     margin: 0 auto;
 }
@@ -645,13 +688,12 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #fff!important;
 }
 
 .container {
@@ -677,7 +719,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    filter: contrast(3.5);
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -705,7 +748,8 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 25px;
     line-height: 1.4em;
 }
 
@@ -713,7 +757,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #000 !important;
 }
 
 .med-width-whitespace {
@@ -723,7 +767,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #F3976C!important;
 }
 
 h4 {
@@ -736,10 +780,12 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    font-weight: 400;
+    color: #000!important;
 }
 
 .portfolio-thumb {
+    width: 600px;
     margin-bottom: 24px;
 }
 
@@ -752,11 +798,6 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
-
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
@@ -766,34 +807,32 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
 
 .tc-white {
+    font-weight: 700;
     color: #F3976C!important;
+    filter: contrast(4.5);
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #F3976C!important;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #742734!important;
 }
 
 .ltc-atomic-tangerine {
@@ -805,16 +844,12 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #f3736c!important;
+    border-color: #f3736c!important;
 }
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
@@ -822,7 +857,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +883,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,21 +907,13 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+   
 }
 
 @media (max-width: 767px) {
@@ -1026,6 +1053,26 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+    .bloc_767px {
+        padding: 20px;
+        width: 500px;
+        height: 850px;
+    }
+
+    .row-no-gutters {
+        display: flex;
+    }
+    .col-sm-3 {
+        margin:auto
+    }
+
+    .col-sm-6 {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1038,5 +1085,14 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media (max-width: 677px) {
+    .row-no-gutters {
+        display: flex;
+    }
+    .col-sm-3 {
+        margin:auto
     }
 }
