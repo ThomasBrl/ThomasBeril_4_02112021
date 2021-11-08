@@ -40,6 +40,7 @@ h2 {
 }
 
 .bold {
+    color: #000;
     font-weight: 700;
 }
 
@@ -154,7 +155,7 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .d-bloc .a-btn,
@@ -688,12 +689,11 @@ h3,
 h4,
 h5,
 h6,
-label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #fff!important;
+    color: rgb(255, 255, 255)!important;
 }
 
 .container {
